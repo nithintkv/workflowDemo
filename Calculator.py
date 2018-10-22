@@ -6,9 +6,9 @@
 #     return x - y
 #
 #
-# def multiply(x, y):
-#     return x * y
-#
+def multiply(x, y):
+    return x * y
+
 
 #Divide - has error
 def divide(x, y):
@@ -26,6 +26,8 @@ choice = input("Enter choice(4):")
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 
+if choice == '3':
+    print(num1, "*", num2, "=", multiply(num1, num2))
 if choice == '4':
     print(num1, "/", num2, "=", divide(num1, num2))
 else:
